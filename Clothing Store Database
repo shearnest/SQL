@@ -1,0 +1,24 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, item TEXT, occasion TEXT, price INTEGER, quantity INTEGER ) ;
+INSERT INTO clothing VALUES (1, "Tshirt Dress", "Casual", 20, 5);
+INSERT INTO clothing VALUES (2, "Flare Jeans", "Casual", 60, 4);
+INSERT INTO clothing VALUES (3, "Crop Hoddie", "Casual", 40, 4);
+INSERT INTO clothing VALUES (4, "Linen Pants", "Casual", 40, 5);
+INSERT INTO clothing VALUES (5, "Knit Tshirt", "Casual", 15, 6);
+INSERT INTO clothing VALUES (6, "Knit Trouser", "Work", 40, 4);
+INSERT INTO clothing VALUES (7, "Silk Blouse", "Work", 20, 5);
+INSERT INTO clothing VALUES (8, "Midi Skirt", "Work", 35, 4);
+INSERT INTO clothing VALUES (9, "Short Sleeve Blouse", "Work", 15, 6);
+INSERT INTO clothing VALUES (10, "Tweed Blazer", "Work", 40, 3);
+INSERT INTO clothing VALUES (11, "Satin Slip Dress", "Going Out", 40, 4);
+INSERT INTO clothing VALUES (12, "Midi Wrap Dress", "Going Out", 30, 5);
+INSERT INTO clothing VALUES (13, "Bralette Top", "Going Out", 25, 6);
+INSERT INTO clothing VALUES (14, "Skort Romper", "Going Out", 20, 4);
+INSERT INTO clothing VALUES (15, "Sequin Mini Dress", "Going Out", 40, 5);
+
+--display the database ordered by price
+SELECT * FROM clothing ORDER BY price;
+
+--display priced items greater than 30, organized by price
+SELECT * FROM clothing WHERE price > 30 ORDER BY price;
+
+
